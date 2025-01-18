@@ -1,0 +1,36 @@
+[project]
+name = "cnn-movies"
+version = "0.1.0"
+description = "ML/DL project"
+authors = [
+    {name = "Sergei Vdovenkov", email = "vdovenkov2000@gmail.com"},
+    {name = "Elena Miacheva", email = "mmiacheva@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch (>=2.5.1,<3.0.0)",
+    "pytorch-lightning (>=2.5.0.post0,<3.0.0)",
+    "wandb (>=0.19.4,<0.20.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (>=2.2.1,<3.0.0)",
+    "torchvision (>=0.20.1,<0.21.0)",
+    "matplotlib (>=3.10.0,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "python-telegram-bot (>=21.10,<22.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+black = {extras = ["jupyter"], version = "^24.10.0"}
+flake8 = "^7.1.1"
+nbqa = "^1.9.1"
+
