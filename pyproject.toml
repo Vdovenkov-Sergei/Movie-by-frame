@@ -1,10 +1,11 @@
 [project]
-name = "cnn-movies"
+name = "Movie-by-frame"
 version = "0.1.0"
 description = "ML/DL project"
 authors = [
     {name = "Sergei Vdovenkov", email = "vdovenkov2000@gmail.com"},
-    {name = "Elena Miacheva", email = "mmiacheva@gmail.com"}
+    {name = "Elena Miacheva", email = "mmiacheva@gmail.com"},
+    {name = "Alexey Krasnov", email = "akrasnov135@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.11"
