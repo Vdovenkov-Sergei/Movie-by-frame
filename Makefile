@@ -1,27 +1,23 @@
-APP_NAME = run_bot
-CODE_PY = $(APP_NAME).py src/ tests/
-CODE_IPYNB = notebooks/
+RUN_FILENAME = run_bot.py
+CODE = $(RUN_FILENAME) src/
+POETRY_CMD = poetry run
+EXCLUDE =
 
-MAX_LINE_LENGTH = 120
-FAILS = 1
-
-.PHONY: format run test update lint clean
+.PHONY: format run test lint clean
 
 format:
-	poetry run black --line-length $(MAX_LINE_LENGTH) $(CODE_PY) $(CODE_IPYNB)
+	$(POETRY_CMD) black $(CODE) --exclude=$(EXCLUDE)
 
 run:
-	poetry run python $(APP_NAME).py
+	$(POETRY_CMD) python $(RUN_FILENAME)
 
 test:
-	poetry run pytest -k "$(TEST_NAME)" -m "$(MARKERS)" --maxfail=$(FAILS) -q --cov=src/ --cov-report=term-missing
-
-update:
-	poetry update
+	$(POETRY_CMD) pytest -k "$(TEST_NAME)" -m "$(MARKERS)" -q --cov=$(CODE) --cov-report=term-missing
 
 lint:
-	-poetry run flake8 $(CODE_PY) --max-line-length=$(MAX_LINE_LENGTH) --verbose
-	poetry run nbqa flake8 --color=always $(CODE_IPYNB) --max-line-length=$(MAX_LINE_LENGTH) --verbose
+	$(POETRY_CMD) ruff check $(CODE) --exclude=$(EXCLUDE)
 
 clean:
-	rm -rf **/__pycache__ **/*.pyc **/*.pyo .coverage .pytest_cache
+	find . -type d -name "__pycache__" ! -path "./.venv/*" -exec rm -rf {} +
+	find . -type f \( -name "*.pyc" -o -name "*.pyo" -o -name "*.pyd" \) ! -path "./.venv/*" -delete
+	rm -rf .coverage .pytest_cache .ruff_cache
