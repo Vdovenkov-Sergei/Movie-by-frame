@@ -6,9 +6,10 @@ The main goal of the project is to implement an AI model that will determine `th
 
 ## Datasets
 
-* Processed dataset for 5 films [here](https://drive.google.com/file/d/1-17Dwjl7usXQNaPZ22ckJQPFcvPGC-91/view?usp=sharing)
-* Unprocessed dataset for 5 films [here](https://drive.google.com/file/d/1-2Bj6BbKKM9IzQXyU0qv3epS5TRgl_ay/view?usp=sharing)
-* Processed dataset for 50 films [here](https://drive.google.com/file/d/1-3AacBeBjMPfVpOMERMG2RbCxUwyn1yY/view?usp=sharing)
-* Unprocessed dataset for 50 films [here](https://drive.google.com/file/d/1-3WXdn9rgeDnydZmKpZI4QbT-0nHghiE/view?usp=sharing)
-* Processed dataset [here](https://drive.google.com/file/d/1-4jDcL2KF9f1Mh9o4KLMnXhybpAwf2eV/view?usp=sharing)
-* Unprocessed dataset [here](https://drive.google.com/file/d/1F3LXcQa8zeuJ7F963i4xr2FRGyIM70Cd/view?usp=sharing)
+<img src="images/dataset_screen.png" width="800" height="200" alt="">
+
+The original dataset is [here](https://drive.google.com/file/d/1F3LXcQa8zeuJ7F963i4xr2FRGyIM70Cd/view?usp=sharing). After resizing frames and removing common and uninformative frames using `YOLO`, the following datasets were obtained:
+
+* Dataset of 5 films [here](https://drive.google.com/file/d/1fVZGS58fs-yL5huS6ndM1XP6cq-PAGd8/view?usp=sharing) and [here](https://drive.google.com/file/d/19Qa3092ABX9rybKuyI8QLnE036DOf_Zo/view?usp=sharing)
+* Dataset of 50 films [here](https://drive.google.com/file/d/1--6Q00HBevQp6shgiQMf9bvdIcP5i-e7/view?usp=sharing) and [here](https://drive.google.com/file/d/1-6OdfVbgSnfkzpY7JXLYU2sSOM5LDrjE/view?usp=sharing)
+* Processed dataset [here](https://drive.google.com/file/d/1-AfgwyKszlHKuAUeqrApnq5A844IcIuR/view?usp=sharing)
