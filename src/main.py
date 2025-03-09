@@ -8,14 +8,13 @@ import torch.nn.functional as F
 from dotenv import load_dotenv
 from PIL import Image
 from telegram import Update
-from telegram.ext import (Application, CommandHandler, ContextTypes,
-                          MessageHandler, filters)
+from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 
 from src.model import model
-from src.utils import (CLASSES, DONT_KNOW_RESPONSE, GREETING, RESPONSE,
-                       THRESHOLD, transform)
+from src.utils import CLASSES, DONT_KNOW_RESPONSE, GREETING, RESPONSE, THRESHOLD, transform
 
 warnings.filterwarnings("ignore")
+
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
 load_dotenv()
