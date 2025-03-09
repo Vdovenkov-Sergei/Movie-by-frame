@@ -2,7 +2,7 @@
 .vscode
 
 ### Model Parameters ###
-src/model.pt
+src/data/model.pt
 
 ### Python ###
 # Byte-compiled / optimized / DLL files

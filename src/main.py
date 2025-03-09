@@ -4,14 +4,13 @@ import os
 import warnings
 
 import torch
-import torch.nn.functional as F
 from dotenv import load_dotenv
 from PIL import Image
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 
 from src.model import model
-from src.utils import CLASSES, DONT_KNOW_RESPONSE, GREETING, RESPONSE, THRESHOLD, transform
+from src.utils import CLASSES, DONT_KNOW_RESPONSE, GREETING, RESPONSE, TEMPERATURE, THRESHOLD, transform
 
 warnings.filterwarnings("ignore")
 
@@ -39,7 +38,11 @@ async def handle_image(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
         with torch.no_grad():
             output = model(image_tensor)
-            probabilities = F.softmax(output, dim=1)
+            mean = torch.mean(output, dim=1, keepdim=True)
+            std = torch.std(output, dim=1, keepdim=True)
+            normalized_output = (output - mean) / std
+            scaled_output = normalized_output / TEMPERATURE
+            probabilities = torch.sigmoid(scaled_output)
 
         max_prob, predicted_class = torch.max(probabilities, dim=1)
         max_prob = max_prob.item()

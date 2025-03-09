@@ -1,6 +1,6 @@
 from torchvision.transforms import transforms
 
-with open("src/classes.txt", "r", encoding="UTF-8") as file:
+with open("src/data/classes.txt", "r", encoding="UTF-8") as file:
     CLASSES = {
         int(target): movie_name
         for class_line in file.readlines()
@@ -8,11 +8,12 @@ with open("src/classes.txt", "r", encoding="UTF-8") as file:
     }
 
 MODEL_NAME = "vit_base_patch16_224"
-MODEL_PT_PATH = "src/model.pt"
+MODEL_PT_PATH = "src/data/model.pt"
 GREETING = "Привет! Отправь мне кадр из фильма, и я попробую сказать, как называется этот фильм!"
 DONT_KNOW_RESPONSE = "Извини, мне кажется, что я не знаю такой фильм. Попробуй отправить мне другой кадр!"
 RESPONSE = "Я думаю, что это кадр из фильма {movie_name}, но могу быть не прав. Уверенность: {confidence:.2f}"
-THRESHOLD = 0.5
+THRESHOLD = 0.7
+TEMPERATURE = 1.8
 
 transform = transforms.Compose(
     [
