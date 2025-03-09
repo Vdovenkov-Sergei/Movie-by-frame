@@ -1,9 +1,13 @@
+import warnings
+
 import pytorch_lightning as pl
 import torch
 import torch.nn as nn
 from timm import create_model
 
 from src.utils import CLASSES, MODEL_NAME, MODEL_PT_PATH
+
+warnings.filterwarnings("ignore")
 
 
 class ViTClassifier(pl.LightningModule):
