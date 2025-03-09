@@ -7,6 +7,7 @@ EXCLUDE =
 
 format:
 	$(POETRY_CMD) black $(CODE) --exclude=$(EXCLUDE)
+	$(POETRY_CMD) isort $(CODE) --skip=$(EXCLUDE)
 
 run:
 	$(POETRY_CMD) python $(RUN_FILENAME)

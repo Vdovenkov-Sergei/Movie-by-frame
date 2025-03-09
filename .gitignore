@@ -1,5 +1,8 @@
-###VS code###
+### VS code ###
 .vscode
+
+### Model Parameters ###
+src/model.pt
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
