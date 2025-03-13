@@ -16,7 +16,7 @@ The original dataset is [here](https://drive.google.com/file/d/1F3LXcQa8zeuJ7F96
 
 ## Loading trained model
 
-Since the file with the model coefficients is large for GitHub, the file must be added to the `src/data` folder with name `model.pt`. The link to this file is [here](https://drive.google.com/file/d/1xon1q-he61V_CSgB9qXKnwFsLDdtJL3k/view?usp=sharing).
+Since the file with the model coefficients is large for GitHub, the file must be added to the `data` folder with name `model.pt`. The link to this file is [here](https://drive.google.com/file/d/1NPFkKQTDzdCaXKFcKEN_n1MyXcvJ21k-/view?usp=sharing).
 
 ## Telegram-bot token
 

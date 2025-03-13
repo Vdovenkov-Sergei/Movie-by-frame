@@ -1,14 +1,14 @@
 from torchvision.transforms import transforms
 
-with open("src/data/classes.txt", "r", encoding="UTF-8") as file:
+with open("data/classes.txt", "r", encoding="UTF-8") as file:
     CLASSES = {
         int(target): movie_name
         for class_line in file.readlines()
-        for movie_name, target in [class_line.strip().split(":")]
+        for movie_name, target in [class_line.strip().split(": ")]
     }
 
 MODEL_NAME = "vit_base_patch16_224"
-MODEL_PT_PATH = "src/data/model.pt"
+MODEL_PT_PATH = "data/model.pt"
 GREETING = "Привет! Отправь мне кадр из фильма, и я попробую сказать, как называется этот фильм!"
 DONT_KNOW_RESPONSE = "Извини, мне кажется, что я не знаю такой фильм. Попробуй отправить мне другой кадр!"
 RESPONSE = "Я думаю, что это кадр из фильма {movie_name}, но могу быть не прав. Уверенность: {confidence:.2f}"
