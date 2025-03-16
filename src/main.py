@@ -39,9 +39,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def handle_image(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     try:
         if not update.message.photo:
-            await update.message.reply_text("Пожалуйста, отправь мне изображение!")
+            await update.message.reply_text("Пожалуйста, отправь мне изображение!🎬")
             return
-        
+
         file = await update.message.photo[-1].get_file()
         image_stream = io.BytesIO()
         await file.download_to_memory(out=image_stream)
@@ -77,16 +77,22 @@ async def handle_image(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
     except Exception as e:
         logger.error(f"Ошибка при обработке изображения: {e}")
-        await update.message.reply_text("Произошла ошибка при обработке изображения.")
+        await update.message.reply_text("Произошла ошибка при обработке изображения.😕")
+
+
+async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text("Извините, я не понял эту команду.😕")
 
 
 async def error(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    logger.warning(f"Update {update} caused error {context.error}")
+    user = update.message.from_user
+    logger.warning(f"Ошибка у пользователя {user.full_name} (ID: {user.id})\nОшибка: {context.error}")
 
 
 def main() -> None:
     app = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.PHOTO, handle_image))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, unknown))
     app.add_error_handler(error)
     app.run_polling()
