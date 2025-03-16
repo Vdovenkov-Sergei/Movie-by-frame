@@ -46,6 +46,11 @@ ruff = "^0.9.6"
 line-length = 120 
 target-version = ['py311']
 
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = ["src"]
+
 [tool.ruff]
 line-length = 120
 

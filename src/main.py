@@ -10,7 +10,17 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 
 from src.model import model
-from src.utils import CLASSES, DONT_KNOW_RESPONSE, GREETING, RESPONSE, TEMPERATURE, THRESHOLD, transform
+from src.utils import (
+    CLASSES,
+    DONT_KNOW_RESPONSE,
+    GREETING,
+    RESPONSE,
+    RESPONSE_LIST,
+    TEMPERATURE,
+    THRESHOLD_TOP1,
+    THRESHOLD_TOP3,
+    transform,
+)
 
 warnings.filterwarnings("ignore")
 
@@ -28,6 +38,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def handle_image(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     try:
+        if not update.message.photo:
+            await update.message.reply_text("Пожалуйста, отправь мне изображение!")
+            return
+        
         file = await update.message.photo[-1].get_file()
         image_stream = io.BytesIO()
         await file.download_to_memory(out=image_stream)
@@ -44,14 +58,23 @@ async def handle_image(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
             scaled_output = normalized_output / TEMPERATURE
             probabilities = torch.sigmoid(scaled_output)
 
-        max_prob, predicted_class = torch.max(probabilities, dim=1)
-        max_prob = max_prob.item()
-        predicted_class = predicted_class.item()
+        top_probs, top_indices = torch.topk(probabilities, k=3, dim=1)
+        top_probs = top_probs.squeeze(0).tolist()
+        top_indices = top_indices.squeeze(0).tolist()
 
-        if max_prob < THRESHOLD:
-            await update.message.reply_text(DONT_KNOW_RESPONSE)
+        max_prob = top_probs[0]
+        predicted_class = top_indices[0]
+        if max_prob >= THRESHOLD_TOP1:
+            await update.message.reply_text(RESPONSE.format(name=CLASSES[predicted_class]))
+        elif max_prob >= THRESHOLD_TOP3:
+            await update.message.reply_text(
+                RESPONSE_LIST.format(
+                    top1=CLASSES[top_indices[0]], top2=CLASSES[top_indices[1]], top3=CLASSES[top_indices[2]]
+                )
+            )
         else:
-            await update.message.reply_text(RESPONSE.format(movie_name=CLASSES[predicted_class], confidence=max_prob))
+            await update.message.reply_text(DONT_KNOW_RESPONSE)
+
     except Exception as e:
         logger.error(f"Ошибка при обработке изображения: {e}")
         await update.message.reply_text("Произошла ошибка при обработке изображения.")
