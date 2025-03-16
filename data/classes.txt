@@ -1,0 +1,257 @@
+10 Things I Hate About You (1999): 0
+12 Years a Slave (2013): 1
+127 Hours (2010): 2
+1917 (2019): 3
+A Beautiful Mind (2001): 4
+A Fish Called Wanda (1988): 5
+A History of Violence (2005): 6
+A League of Their Own (1992): 7
+A Serious Man (2009): 8
+A Star Is Born (2018): 9
+About Time (2013): 10
+Aladdin (1992): 11
+American Gangster (2007): 12
+An Education (2009): 13
+Apocalypto (2006): 14
+Apollo 13 (1995): 15
+Atonement (2007): 16
+Avatar (2009): 17
+Babel (2006): 18
+Baby Driver (2017): 19
+Babylon (2022): 20
+Barbie (2023): 21
+Batman (1989): 22
+Before Midnight (2013): 23
+Before Sunrise (1995): 24
+Before Sunset (2004): 25
+Being John Malkovich (1999): 26
+Ben-Hur (1959): 27
+Black Panther (2018): 28
+Blade (1998): 29
+Blade Runner 2049 (2017): 30
+Blue Valentine (2010): 31
+Bohemian Rhapsody (2018): 32
+Boogie Nights (1997): 33
+Booksmart (2019): 34
+Boyz n The Hood (1991): 35
+Braveheart (1995): 36
+Bridge Of Spies (2015): 37
+Brokeback Mountain (2005): 38
+Burn After Reading (2008): 39
+Call Me By Your Name (2017): 40
+Captain Fantastic (2016): 41
+Carol (2015): 42
+Casino (1995): 43
+Charlie and the Chocolate Factory (2005): 44
+Chicago (2002): 45
+Children of Men (2006): 46
+Cloud Atlas (2012): 47
+Coach Carter (2005): 48
+Collateral (2004): 49
+Constantine (2005): 50
+Contact (1997): 51
+Creed (2015): 52
+Crimson Tide (1995): 53
+Cruella (2021): 54
+Dark City (1998): 55
+Dazed and Confused (1993): 56
+Desperado (1995): 57
+Doctor Strange (2016): 58
+Doctor Strange In The Multiverse Of Madness (2022): 59
+Dr. No (1962): 60
+Dune (2021): 61
+Dunkirk (2017): 62
+Elvis (2022): 63
+Erin Brockovich (2000): 64
+Escape from New York (1981): 65
+Everything Everywhere All At Once (2022): 66
+Eyes Wide Shut (1999): 67
+Fargo (1996): 68
+Fear And Loathing In Las Vegas (1998): 69
+Fences (2016): 70
+Finding Neverland (2004): 71
+First Man (2018): 72
+Ford V Ferrari (2019): 73
+Friday (1995): 74
+From Dusk Till Dawn (1996): 75
+Gangs of New York (2002): 76
+Gattaca (1997): 77
+Ghost World (2001): 78
+Ghostbusters (1984): 79
+Gone Girl (2014): 80
+Good Time (2017): 81
+Good Will Hunting (1997): 82
+Goodfellas (1990): 83
+Gravity (2013): 84
+Grease (1978): 85
+Guardians Of The Galaxy Vol. 2 (2017): 86
+Guardians of the Galaxy (2014): 87
+Harry Potter And The Chamber Of Secrets (2002): 88
+Harry Potter And The Half-Blood Prince (2009): 89
+Harry Potter And The Prisoner Of Azkaban (2004): 90
+Heat (1995): 91
+Her (2013): 92
+Hidden Figures (2016): 93
+Hot Fuzz (2007): 94
+Hugo (2011): 95
+Indiana Jones And The Temple Of Doom (1984): 96
+Inside Llewyn Davis (2013): 97
+Interstellar (2014): 98
+Isle Of Dogs (2018): 99
+JFK (1991): 100
+Jackie Brown (1997): 101
+John Wick (2014): 102
+Jojo Rabbit (2019): 103
+Jumanji (1995): 104
+Juno (2007): 105
+K-PAX (2001): 106
+King Kong (2005): 107
+King Richard (2021): 108
+Kingdom Of Heaven (2005): 109
+Kiss Kiss Bang Bang (2005): 110
+La La Land (2016): 111
+Lady Bird (2017): 112
+Legends of the Fall (1994): 113
+Les Misérables (2012): 114
+Licorice Pizza (2021): 115
+Life of Pi (2012): 116
+Lincoln (2012): 117
+Lion (2016): 118
+Little Miss Sunshine (2006): 119
+Little Women (2019): 120
+Lost Highway (1997): 121
+Lucky Number Slevin (2006): 122
+Magnolia (1999): 123
+Man On The Moon (1999): 124
+Man of Steel (2013): 125
+Man on Fire (2004): 126
+Marriage Story (2019): 127
+Match Point (2005): 128
+Matchstick Men (2003): 129
+Melancholia (2011): 130
+Memoirs of a Geisha (2005): 131
+Michael Clayton (2007): 132
+Midnight In Paris (2011): 133
+Milk (2008): 134
+Million Dollar Baby (2004): 135
+Misery (1990): 136
+Moonrise Kingdom (2012): 137
+Mulan (1998): 138
+Mystic River (2003): 139
+Napoleon Dynamite (2004): 140
+Natural Born Killers (1994): 141
+Never Let Me Go (2010): 142
+Nightmare Alley (2021): 143
+No Country For Old Men (2007): 144
+No Time To Die (2021): 145
+Nomadland (2020): 146
+Notting Hill (1999): 147
+Oblivion (2013): 148
+Past Lives (2023): 149
+Platoon (1986): 150
+Pleasantville (1998): 151
+Point Break (1991): 152
+Pretty Woman (1990): 153
+Prisoners (2013): 154
+Promising Young Woman (2020): 155
+Pulp Fiction (1994): 156
+Ray (2004): 157
+Reservoir Dogs (1992): 158
+Rocketman (2019): 159
+Room (2015): 160
+Rushmore (1998): 161
+Saving Private Ryan (1998): 162
+Se7en (1995): 163
+Shame (2011): 164
+Shaun Of The Dead (2004): 165
+Shrek (2001): 166
+Sideways (2004): 167
+Silence (2016): 168
+Skyfall (2012): 169
+Slumdog Millionaire (2008): 170
+Soul (2020): 171
+Sound Of Metal (2019): 172
+Speed (1994): 173
+Spirited Away (2001): 174
+Spotlight (2015): 175
+Spy Game (2001): 176
+St. Vincent (2014): 177
+Starship Troopers (1997): 178
+Sunshine (2007): 179
+The Assassination Of Jesse James By The Coward Robert Ford (2007): 180
+The Banshees Of Inisherin (2022): 181
+The Batman (2022): 182
+The Big Sick (2017): 183
+The Breakfast Club (1985): 184
+The Crow (1994): 185
+The Curious Case of Benjamin Button (2008): 186
+The Danish Girl (2015): 187
+The Dark Knight Rises (2012): 188
+The Devil All The Time (2020): 189
+The Equalizer (2014): 190
+The Fall (2006): 191
+The Father (2020): 192
+The Favourite (2018): 193
+The Florida Project (2017): 194
+The Founder (2016): 195
+The French Connection (1971): 196
+The Game (1997): 197
+The Gentlemen (2019): 198
+The Girl with the Dragon Tattoo (2011): 199
+The Grand Budapest Hotel (2014): 200
+The Hunt for Red October (1990): 201
+The Hurt Locker (2008): 202
+The Incredibles (2004): 203
+The Killing Of A Sacred Deer (2017): 204
+The Last Duel (2021): 205
+The Life Aquatic with Steve Zissou (2004): 206
+The Lighthouse (2019): 207
+The Little Mermaid (2023): 208
+The Lobster (2015): 209
+The Martian (2015): 210
+The Master (2012): 211
+The Matrix (1999): 212
+The Mummy (1999): 213
+The Nightmare Before Christmas (1993): 214
+The Northman (2022): 215
+The Notebook (2004): 216
+The Passion Of The Christ (2004): 217
+The Perks of Being a Wallflower (2012): 218
+The Pianist (2002): 219
+The Place Beyond the Pines (2012): 220
+The Post (2017): 221
+The Princess Bride (1987): 222
+The Pursuit of Happyness (2006): 223
+The Revenant (2015): 224
+The Road (2009): 225
+The Silence Of The Lambs (1991): 226
+The Super Mario Bros. Movie (2023): 227
+The Two Popes (2019): 228
+The Usual Suspects (1995): 229
+The Virgin Suicides (1999): 230
+The Walk (2015): 231
+The Warriors (1979): 232
+The Way Back (2010): 233
+The Wrestler (2008): 234
+The X Files (1998): 235
+There Will Be Blood (2007): 236
+Three Kings (1999): 237
+Total Recall (1990): 238
+Training Day (2001): 239
+Treasure Planet (2002): 240
+True Grit (2010): 241
+True Romance (1993): 242
+Unbroken (2014): 243
+Uncut Gems (2019): 244
+War Dogs (2016): 245
+War For The Planet Of The Apes (2017): 246
+War Horse (2011): 247
+Warrior (2011): 248
+We Need to Talk About Kevin (2011): 249
+Wedding Crashers (2005): 250
+What We Do in the Shadows (2014): 251
+Whiplash (2014): 252
+Wild (2014): 253
+Willow (1988): 254
+Wind River (2017): 255
+Wrath Of Man (2021): 256
