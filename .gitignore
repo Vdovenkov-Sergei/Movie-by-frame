@@ -1,6 +1,9 @@
 ###VS code###
 .vscode
 
+### Model Parameters ###
+data/model.pt
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
