@@ -4,7 +4,7 @@ The main goal of the project is to implement an AI model that will determine `th
 
 ## Datasets
 
-<img src="images/dataset_screen.png" width="1000" height="150" alt="">
+<img src="images/dataset_screen.png" alt="">
 
 The original dataset is [here](https://drive.google.com/file/d/1F3LXcQa8zeuJ7F963i4xr2FRGyIM70Cd/view?usp=sharing). After resizing frames and removing common and uninformative frames using `YOLO`, the following datasets were obtained:
 
